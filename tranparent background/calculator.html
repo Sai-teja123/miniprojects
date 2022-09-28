@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #back{
+        background-size: 100% 1000px;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        
+      }
+        #a{
+        width: 250px;
+        height:250px;
+        position: relative;
+        top:0px;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        background-color: rgb(55, 255, 0);
+        margin: -5px
+       }
+       #a:hover{
+        width: 250px;
+        height:250px;
+        border-top-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        background-image: url(./rabbit.jpg);
+        margin: -5px;
+        background-repeat: no-repeat;
+        background-size: 50% 250px;
+        background-position: 40px;
+        background-color: rgba(37, 221, 228, 0.74);
+        box-shadow: 2px 3px 2px black;
+       }
+       #b{
+        width: 250px;
+        height: 250px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        background-color: rgb(55, 255, 0);
+        margin-top: -338px;
+        margin-left:500px;
+       }
+       #b:hover{
+        width: 250px;
+        height: 250px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        background-color: rgb(55, 255, 0);
+        margin-top: -338px;
+        margin-left:500px;
+        background-image: url(./rabbit1.jpg);
+        background-size: 270px 265px;
+        background-position: -20px;
+        background-repeat: no-repeat;
+        box-shadow: 0px 2px 2px black;
+       }
+       #c{
+        width: 450px;
+        height:410px;
+        background-color: rgb(255, 0, 208);
+        border-radius: 100%;
+        margin-top: -130px;
+        margin-left: 150px;
+        }
+        #c:hover{
+        width: 450px;
+        height:410px;
+        border-radius: 100%;
+        margin-top: -130px;
+        margin-left: 150px;
+        background-image: url(./horrorrabbit.jpg);
+        background-size: 550px 495px;
+        background-repeat: no-repeat;
+        background-position: -50px;
+        box-shadow: 4px 2px 2px lime,-2px 2px 2px orange;
+        }
+      #d{
+        width: 350px;
+        height:310px;
+        background-color: blue;
+        border-radius: 100%;
+        margin-top: -30px;
+        margin-left: 200px;
+      }
+      #d:hover{
+        width: 350px;
+        height:310px;
+       box-shadow: 5px 6px 4px white,-5px -5px 4px black;
+        border-radius: 100%;
+        margin-top: -30px;
+        margin-left: 200px;
+        background-image: radial-gradient(red,black,white,orange,violet,indigo,lime,yellow);
+      }
+      #e{
+        width: 20%;
+        height:55px;
+        border-radius: 50%;
+        background-color: rgb(255, 0, 38);
+        position: relative;
+        top: 200px;
+        left: 8px;
+      }
+      #e:hover{
+        width: 20%;
+        height:55px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: relative;
+        top: 200px;
+        left: 8px;
+      }
+      #f{
+        width: 20%;
+        height:55px;
+        border-radius: 50%;
+        background-color: rgb(255, 0, 38); 
+        position: relative;
+        top: 150px;
+        left: 350px;
+      }
+      #f:hover{
+        width: 20%;
+        height:55px;
+        border-radius: 50%;
+        background-color: gold; 
+        position: relative;
+        top: 150px;
+        left: 350px;
+      }
+      #g{
+        width: 350px;
+        height:150px;
+        border-radius: 50%;
+        background-color:brown;
+        border: none;
+      }
+      #lab{
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        position: relative;
+        top: 75px;
+        left: 130px;
+        color:chartreuse;
+        text-decoration:underline;
+        letter-spacing: 3px;
+      }
+      #res{
+        font-size: 20px;
+        position: relative;
+        top: 90px;
+        left: 160px;
+        color: antiquewhite;
+      }
+      #res:hover{
+        font-size: 20px;
+        position: relative;
+        top: 90px;
+        left: 160px;
+        color: rgb(237, 14, 47);
+      }
+      #left{
+        width: 50px;
+        position: absolute;
+        top: 120px;
+        left: 90px;
+        text-align: center;
+        color: rgb(236, 107, 14);
+      }
+      #left:hover{
+        width: 50px;
+        position: absolute;
+        top: 120px;
+        left: 90px;
+        text-align: center;
+        background-color: bisque;
+        box-shadow: 2px 2px 2px black;
+        border: none;
+        outline: none;
+      }
+      #right{
+        width: 50px;
+        position: absolute;
+        top:128px;
+        left: 590px;
+        text-align: center;
+      }
+      #right:hover{
+        width: 50px;
+        position: absolute;
+        top:128px;
+        left: 590px;
+        text-align: center;
+        box-shadow: 2px 2px 2px black;
+        background-color: beige;
+        border: none;
+        outline: none;
+      }
+      #add{
+        width: 50px;
+        position: relative;
+        top:115px;
+        left: 70px;
+      }
+      #add:hover{
+        width: 50px;
+        position: relative;
+        top:115px;
+        left: 70px;
+        border-radius: 25px;
+        box-shadow: 2px 3px 3px orange;
+        border: none;
+        outline: none;
+      }
+      #mul{
+        width: 50px;
+        position: relative;;
+        top:118px;
+        left: 280px;
+      }
+      #mul:hover{
+        width: 50px;
+        position: relative;;
+        top:118px;
+        left: 280px;
+        border-radius: 25px;
+        box-shadow: 2px 3px 3px rgba(255, 166, 0, 0.854);
+        border: none;
+        outline: none;
+      }
+      #sub{
+        width: 50px;
+        position: relative;
+        top:210px;
+        left: 100px;
+      }
+      #sub:hover{
+        width: 50px;
+        position: relative;
+        top:210px;
+        left: 100px;
+        border-radius: 25px;
+        box-shadow: 2px 3px 3px rgba(153, 255, 0, 0.646);
+        border: none;
+        outline: none;
+        background-color: brown;
+      }
+      #divi{
+        width: 80px;
+        position: relative;
+        top:320px;
+        left: 25px;
+        border-radius: 50px;
+      }
+      #divi:hover{
+        width: 80px;
+        position: relative;
+        top:320px;
+        left: 25px;
+        border-radius: 50px;
+        box-shadow: 2px 3px 3px rgba(12, 12, 199, 0.733);
+        border: none;
+        outline: none;
+        background-color: rgba(225, 7, 7, 0.877);
+      }
+      #mod{
+        width: 40px;
+        position: relative;
+        top:18px;
+        left: 22px;
+      }
+      #mod:hover{
+        width: 40px;
+        position: relative;
+        top:18px;
+        left: 22px;
+        box-shadow: 2px 2px 5px rgba(149, 223, 13, 0.87);
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: aqua;
+      }
+      #power{
+        width: 40px;
+        position: relative;
+        top:18px;
+        left: 25px;
+      }
+      #power:hover{
+        width: 40px;
+        position: relative;
+        top:18px;
+        left: 25px;
+        box-shadow: 2px 2px 5px rgba(149, 223, 13, 0.87);
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: indigo;
+      }
+     #lab:hover{
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-shadow: -2px -4px 2px black;
+     }
+     #g:hover{
+      background-color: rgb(19, 132, 68);
+     }
+     
+    </style>
+</head>
+<body id="back" onmouseover="color()" onmouseout="nocolor()">
+  
+    <div id="a">
+        <input type="text" id="left" placeholder="A">
+    </div>
+    <br><br><br><br><br>
+   
+    <div id="b">
+      <input type="text" id="right" placeholder="B">
+    </div>
+    <br><br><br><br><br>
+    <div id="c" >
+      <input type="button" value="+" id="add" onclick="add()">
+      <input type="button" value="*" id="mul" onclick="mul()">
+      <input type="button" value="-" id="sub" onclick="sub()">
+      <input type="button" value="/" id="divi" onclick="divi()">
+      <div id="e">
+        <input type="button" value="%" id="mod" onclick="mod()">
+      </div>
+      <div id="f">
+        <input type="button" value="**" id="power" onclick="power()">
+      </div>
+    </div>
+    <div id="d">
+      <label id="lab">Result</label>
+      <br><br>
+      <div id="g">
+        <h2 id="res"></h2>
+    </div>
+    </div>
+  </marquee>
+    <script>
+      function add() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)+parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function mul() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)*parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function sub() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)-parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function divi() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)/parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function mod() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)%parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function power() {
+       var A = document.getElementById("left").value
+       var B = document.getElementById("right").value
+       let C = parseInt(A)**parseInt(B)
+       document.getElementById("res").innerHTML=C
+      }
+      function color(){
+        document.getElementById("back").style.backgroundImage="URL(rabbitdance.gif)"      
+      }
+      function nocolor(){
+         document.getElementById("back").style.backgroundImage="linear-gradient(155deg,red,blue)"
+      }
+    </script>
+</body>
+</html>

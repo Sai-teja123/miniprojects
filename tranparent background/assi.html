@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assg1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Car Booking Application Form</h1>
+            <div class="main">
+                <span>
+                <input   placeholder="Brand" type="text" id="A">
+                <br><br>
+                <input   placeholder="Model" type="text" id="B" >
+                <br><br>
+                <input   placeholder="color" type="text" id="C" >
+                <br><br> 
+                <input   placeholder="engine" type="text" id="D">
+                <br><br> 
+                <input   placeholder="wheels" type="number" id="E" min="4" max="8" >
+                <br><br> 
+                <input   placeholder="speed" type="number" id="F" >
+                <br><br>
+                <input   placeholder="mileage" type="number" id="G"></span>
+                <br><br>
+                <img src="./1-bmw-png-image-download.png" onclick="vehicle()">
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop>
+        <source src="./Car - 2708.mp4">
+    </video>
+    <p id="car"></p>
+    <script>
+            function vehicle() {
+            var brand = document.getElementById("A").value
+            var model = document.getElementById("B").value
+            var color = document.getElementById("C").value
+            var engine = document.getElementById("D").value
+            var wheels = document.getElementById("E").value
+            var speed = document.getElementById("F").value
+            var mileage = document.getElementById("G").value
+             document.getElementById("car").innerHTML=`I Love cars froms ${brand} brand,
+            in that i like ${model} model, with color of ${color},
+            with ${engine} eng,and having ${wheels} wheels,
+            with ${speed} km/s speed,and having  ${mileage} of mileage`
+        }
+    </script>
+</body>
+</html>

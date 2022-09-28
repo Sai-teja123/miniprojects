@@ -1,0 +1,80 @@
+
+video{
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.container{
+    width: 400px;
+    height: 620px;
+    margin: 5% auto;
+    border-radius: 25px;
+    background-color: rgba(18, 17, 17, 0.009);
+    box-shadow: 0px 0px 17px#fff;
+}
+.container:hover{
+    width: 400px;
+    height: 620px;
+    margin: 5% auto;
+    border-radius: 25px;
+    
+    box-shadow: 0px 0px 17px rgba(28, 49, 236, 0.856);
+}
+.form{
+    text-align: center;
+    padding-top: 10px;
+}
+h1{
+    color: rgb(198, 229, 40);
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+}
+h1:hover{
+    color: rgba(236, 167, 27, 0.838);
+    font-size: 32px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.main input{
+    width: 180px;
+    height: 22px;
+    border-radius: 25px;
+    background-color: rgba(15, 14, 14, 0.457);
+    color: red;
+    border: none;
+    outline: none;
+    padding-left: 35px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.main input:hover{
+    width: 180px;
+    height: 22px;
+    border-radius: 25px;
+    background-color: #efc050;
+    box-shadow: 0px 0px 17px #fff;
+    color: red;
+    border: none;
+    outline: none;
+    padding-left: 35px;
+    box-sizing: border-box;
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+img{
+    position: relative;
+   width: 80px; 
+}
+.main img:hover{
+    box-shadow: 2px 2px 5px rgba(31, 218, 21, 0.724);
+    border-radius: 20px;
+    background-color: rgba(203, 142, 18, 0.737);
+}
+#car{
+    color: aqua;
+}
+
